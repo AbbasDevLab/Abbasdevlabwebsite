@@ -32,9 +32,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-teal-600 rounded-lg flex items-center justify-center">
-              <Code2 className="w-5 h-5 text-white" />
-            </div>
+            <img 
+              src="/Modern AD Letter Logo Instagram Post.svg" 
+              alt="Abbas Dev Lab Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <span 
               className={`text-xl font-bold transition-colors duration-300 ${
                 isScrolled ? 'text-gray-900' : 'text-white'
