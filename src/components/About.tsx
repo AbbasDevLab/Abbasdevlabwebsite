@@ -128,29 +128,80 @@ const About = () => {
         {/* Team Section */}
         <div className="mt-24 text-center">
           <h3 className="text-3xl font-bold text-gray-900 mb-6">
-            Led by Innovation Experts
+            Meet Our Founder
           </h3>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-            Our leadership team combines decades of experience in software development, 
-            business strategy, and technology innovation to guide every project to success.
+            Haider Abbas brings decades of experience in software development, business strategy, 
+            and technology innovation to guide every project to success.
           </p>
           
-          <div className="bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl p-12 text-white relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
+            
             <div className="max-w-4xl mx-auto">
-              <div className="flex items-center justify-center space-x-4 mb-6">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+              <div className="flex flex-col items-center mb-8">
+                <div className="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-6 border border-white/30">
                   <Code2 className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-left">
-                  <div className="text-2xl font-bold">Haider Abbas</div>
-                  <div className="text-blue-100">CEO & Technical Director</div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold mb-2">Haider Abbas</div>
+                  <div className="text-xl text-blue-100 mb-2">Founder & CEO</div>
+                  <div className="text-blue-200">Technical Director</div>
                 </div>
               </div>
-              <p className="text-lg text-blue-100 leading-relaxed">
+              <p className="text-xl text-blue-100 leading-relaxed text-center max-w-3xl mx-auto">
                 "At Abbas Dev Lab, we believe that great software is built by great teams. 
                 Our mission is to create technology solutions that not only solve today's challenges 
                 but empower businesses to thrive in tomorrow's digital landscape."
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Global Presence */}
+        <div className="mt-24">
+          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">
+            Global Presence
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Pakistan Office */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4">
+                  <MapPin className="w-6 h-6 text-green-600" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold text-gray-900">Pakistan Office</h4>
+                  <p className="text-green-600 font-medium">Headquarters</p>
+                </div>
+              </div>
+              <div className="space-y-2 text-gray-600">
+                <p className="font-medium">NICL, Daftarkhawan</p>
+                <p>Vogue Tower</p>
+                <p>MM Alam Road, Lahore</p>
+                <p className="text-sm text-gray-500 mt-4">Development Hub & Operations</p>
+              </div>
+            </div>
+
+            {/* UK Office */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4">
+                  <MapPin className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold text-gray-900">UK Office</h4>
+                  <p className="text-blue-600 font-medium">European Hub</p>
+                </div>
+              </div>
+              <div className="space-y-2 text-gray-600">
+                <p className="font-medium">Glencroft Road</p>
+                <p>Glasgow, G44 5RF</p>
+                <p>United Kingdom</p>
+                <p className="text-sm text-gray-500 mt-4">Client Relations & Strategy</p>
+              </div>
             </div>
           </div>
         </div>

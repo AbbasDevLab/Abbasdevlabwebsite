@@ -116,12 +116,13 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-orange-600" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900">Office</h4>
+                  <h4 className="text-lg font-semibold text-gray-900">Our Offices</h4>
                   <p className="text-gray-600">
-                    <strong>Pakistan Office:</strong><br />
-                    NICL, Daftarkhawan, Vogue Tower<br />
+                    <strong className="text-green-600">Pakistan (HQ):</strong><br />
+                    NICL, Daftarkhawan<br />
+                    Vogue Tower<br />
                     MM Alam Road, Lahore<br /><br />
-                    <strong>UK Office:</strong><br />
+                    <strong className="text-blue-600">United Kingdom:</strong><br />
                     Glencroft Road<br />
                     Glasgow, G44 5RF
                   </p>
