@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Users, Globe, Code2, Target, Heart, Zap, CheckCircle } from 'lucide-react';
+import { Award, Users, Globe, Code2, Target, Heart, Zap, CheckCircle, MapPin } from 'lucide-react';
 
 const About = () => {
   const stats = [
